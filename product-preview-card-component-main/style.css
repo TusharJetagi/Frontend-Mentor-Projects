@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+.card-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+}
+
+.image-section {
+  width: 50%;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+}
+
+.product-details {
+  width: 50%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2rem;
+}
+
+.product-category {
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 14px;
+  letter-spacing: 0.35rem;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+}
+
+.product-name {
+  font-size: 2.2rem;
+  font-family: Fraunces;
+  line-height: 38px;
+  font-weight: 700;
+  color: hsl(212, 21%, 14%);
+}
+
+.product-info {
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat";
+  font-weight: 500;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Fraunces";
+}
+
+.discount-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+
+.old-price {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+}
+
+.cart {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: hsl(158, 36%, 37%);
+  padding: 1rem;
+  color: white;
+  font-family: "Montserrat";
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.cart:hover {
+  background-color: hsl(158, 48%, 26%);
+  cursor: pointer;
+}
+
+@media (max-width: 478px) {
+  .card-container {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image {
+    content: url(images/image-product-mobile.jpg);
+  }
+
+  .image-section {
+    width: 100%;
+  }
+
+  .image-section img {
+    width: 100%;
+  }
+
+  .product-details {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .product-name {
+    font-size: 2rem;
+    line-height: 1.95rem;
+  }
+}
