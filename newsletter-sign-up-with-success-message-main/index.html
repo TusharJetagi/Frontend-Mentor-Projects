@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,regular,500,700,900" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <div class="success-container">
+      <div class="img-container">
+        <img src="images/icon-success.svg " alt="img">
+      </div>
+      <h1>Thanks for <br> subscribing!</h1>
+      <p>A confirmation email has been sent to <br> <span class="userEmail"></span>
+        Please open it and click <br>the button inside to confirm your subscription.</p>
+      <button class="dismiss">Dismiss message</button>
+    </div>
+
+    <div class="main-container">
+      <div class="container_content">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly<br> updates on:</p>
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+        <form action="#" class="form" novalidate>
+          <div class="email-input">
+            <label for="email">Email address</label>
+            <span class="error hidden">Valid email required</span>
+            <input type="email" placeholder="email@company.com" id="email_input">
+          </div>
+          <button type="submit">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+      <div class="container_img">
+        <picture>
+          <source media="(min-width: 450px)" srcset="/images/illustration-sign-up-desktop.svg">
+          <img src="images/illustration-sign-up-mobile.svg">
+        </picture>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+
+</html>

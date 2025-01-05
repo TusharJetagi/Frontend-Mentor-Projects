@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(234, 29%, 20%);
+    overflow-x: hidden;
+}
+
+.success-container {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.success-container h1 {
+    font-size: 2.8rem;
+    color: hsl(234, 29%, 20%);
+}
+
+.success-container p {
+    font-size: 14px;
+    color: hsl(234, 29%, 20%);
+    line-height: 1.3rem;
+}
+
+.success-container p>span {
+    font-weight: 700;
+}
+
+.success-container button {
+    padding: 16px 0;
+    border-radius: 8px;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+.success-container button:hover {
+    background: linear-gradient(to left, hsl(21, 100%, 67%), hsl(4, 100%, 67%));
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 32px;
+    margin-inline: 1rem;
+}
+
+.container_content {
+    padding-inline: 2.5rem;
+}
+
+.container_img {
+    padding-left: 1.5rem;
+}
+
+.container_content h1 {
+    font-size: 3.5rem;
+    color: hsl(234, 29%, 20%);
+}
+
+.container_content p {
+    font-size: 1rem;
+    color: hsl(234, 29%, 20%);
+    margin-block: 18px;
+}
+
+ul {
+    display: inline-block;
+    margin-block: 13px;
+    font-size: 14px;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: hsl(234, 29%, 20%);
+}
+
+li::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(images/icon-list.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container_img img {
+    display: block;
+    object-fit: cover;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.email-input {
+    margin-top: 15px;
+}
+
+.email-input span {
+    color: hsl(4, 100%, 67%);
+    font-size: 12px;
+    font-weight: 500;
+    float: right;
+    display: none;
+}
+
+.form label {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.form input {
+    width: 100%;
+    margin-top: 10px;
+    padding: 16px 0 16px 15px;
+    border-radius: 8px;
+    border: 1px solid hsl(231, 7%, 60%);
+    color: hsl(234, 29%, 20%);
+    cursor: pointer;
+}
+
+.form input.error {
+    border: 1px solid hsl(4, 100%, 67%);
+    background-color: hsla(4, 100%, 67%, 0.109);
+    color: hsl(4, 100%, 67%);
+}
+
+.form input:focus {
+    outline: 1px solid hsl(234, 29%, 20%);
+}
+
+.form button {
+    padding: 16px 0;
+    border-radius: 8px;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.form button:hover {
+    background: linear-gradient(to left, hsl(21, 100%, 67%), hsl(4, 100%, 67%));
+}
+
+@media screen and (max-width:450px) {
+    .main-container {
+        flex-direction: column-reverse;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .container_img {
+        padding: 0;
+        width: 100%;
+    }
+
+    .container_img img {
+        width: 100%;
+    }
+
+    .container_content {
+        padding-inline: 1.5rem;
+    }
+
+    .container_content h1 {
+        font-size: 2.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .container_content p {
+        font-size: 15px;
+    }
+
+    br {
+        display: none;
+    }
+
+    ul {
+        font-size: 16px;
+    }
+
+    .form button {
+        margin-bottom: 2rem;
+    }
+
+    .success-container {
+        justify-content: center;
+        padding: 2rem;
+        border-radius: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .success-container button {
+        margin-top: 5rem;
+    }
+}
