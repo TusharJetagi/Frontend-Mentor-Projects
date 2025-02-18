@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display";
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.card-container {
+  width: 430px;
+  background-color: white;
+  text-align: center;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.card-container .hero-img {
+  width: 100%;
+  height: auto;
+}
+
+.card-container h2 {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  margin-top: 2rem;
+  font-size: 1.7rem;
+}
+
+.desc {
+  color: hsl(224, 23%, 55%);
+  font-weight: 600;
+  width: 300px;
+  margin: auto;
+  margin-top: 1rem;
+  line-height: 1.5rem;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(225, 100%, 98%);
+  width: 350px;
+  margin: auto;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-block: 1.2rem;
+}
+
+.plan-details {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.change-text {
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.change-text:hover {
+  cursor: pointer;
+  color: hsl(247, 73%, 69%);
+  text-decoration: none;
+}
+
+.price-text {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.price-details {
+  color: hsl(224, 23%, 55%);
+  font-weight: 600;
+  margin-top: 0.2rem;
+}
+
+button {
+  border: none;
+  width: 350px;
+  padding-block: 0.8rem;
+  border-radius: 8px;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  font-weight: 700;
+  box-shadow: 1px 5px 10px hsla(245, 75%, 52%, 0.458);
+  margin-top: 0.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: hsl(247, 73%, 69%);
+}
+
+.cancel {
+  color: hsl(224, 23%, 55%);
+  font-weight: 900;
+  margin-top: 1.5rem;
+  margin-bottom: 2.2rem;
+}
+
+.cancel:hover {
+  color: hsl(223, 47%, 23%);
+  cursor: pointer;
+}
+
+@media (max-width: 478px) {
+  .card-container {
+    width: 330px;
+  }
+
+  .price-container {
+    width: 280px;
+  }
+
+  .price-details {
+    font-size: 14px;
+  }
+  .price-text {
+    font-size: 15px;
+  }
+
+  button {
+    width: 280px;
+  }
+}
