@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  min-height: 100vh;
+  background: url("./images/bg-intro-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: hsl(0, 100%, 74%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  margin-inline: 1rem;
+}
+
+.project-desc h1 {
+  font-size: 3rem;
+  color: white;
+  line-height: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.project-desc p {
+  color: white;
+  line-height: 1.5rem;
+}
+
+.form .free-trial {
+  background-color: hsl(248, 32%, 49%);
+  padding: 1.2rem;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 1.4rem;
+  box-shadow: 0px 7px 1px 0px rgba(0, 0, 0, 0.187);
+}
+
+form {
+  box-shadow: 0px 7px 1px 0px rgba(0, 0, 0, 0.187);
+}
+
+.form form {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 10px;
+  width: 550px;
+}
+
+form input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 16px;
+  font-weight: 600;
+  color: hsl(249, 10%, 26%);
+  border-radius: 5px;
+  border: 1px solid rgba(151, 151, 151, 0.433);
+  margin-bottom: 0.5rem;
+}
+
+form div {
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+
+form div img {
+  display: none;
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem;
+}
+
+form input:focus {
+  outline: 1px solid hsl(248, 32%, 49%);
+}
+
+.error {
+  display: none;
+  font-size: 12px;
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  box-shadow: 0px 3px 1px 0px hsla(154, 66%, 38%, 0.865);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: hsla(154, 59%, 51%, 0.675);
+}
+
+.terms {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 12px;
+  color: grey;
+}
+
+.terms span {
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    margin: 2rem 0;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 478px) {
+  main {
+    flex-direction: column;
+    margin: 3rem 0;
+    gap: 3rem;
+  }
+
+  .project-desc h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  .project-desc p {
+    text-align: center;
+    width: 320px;
+    line-height: 1.5rem;
+  }
+
+  .form form {
+    width: 350px;
+    padding: 1.5rem;
+  }
+}
